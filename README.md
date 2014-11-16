@@ -1,4 +1,4 @@
-UCoin Specification:
+UCoin specifications:
 - Algorithm: X15 PoW/PoS
 - Total suply: 9750000
 - Block time: 60 seconds
