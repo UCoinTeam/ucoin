@@ -967,7 +967,7 @@ int64_t GetProofOfWorkReward(int64_t nFees)
     int64_t nSubsidy = 0 * COIN;
     int64_t curBlock = pindexBest->nHeight;
     
-    if(curBlock < 146000) {
+    if(curBlock < 146952) {
     	if(curBlock < 10)
     	{
         	if((curBlock%2) == 0) {
