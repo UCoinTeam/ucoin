@@ -6,7 +6,5 @@ UCoin specifications:
 - PoS Minimal Stake Age: 8 hours
 - PoS Max Stake Age: Unlimited
 - PoS started on block: 5500(4% interest per year)
-- RPC Port: 49698
-- P2P Port: 49697
 
 
