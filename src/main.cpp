@@ -967,7 +967,7 @@ int64_t GetProofOfWorkReward(int64_t nFees)
     int64_t nSubsidy = 0 * COIN;
     int64_t curBlock = pindexBest->nHeight;
     
-    if(curBlock < 146952) {
+    if(curBlock < 158000) {
     	if(curBlock < 10)
     	{
         	if((curBlock%2) == 0) {
@@ -981,13 +981,16 @@ int64_t GetProofOfWorkReward(int64_t nFees)
     	{
 		nSubsidy = 0 * COIN;
     	}
-    	else {
+    	else if(curBlock < 148000) {
         	if((curBlock%2) == 0) {
         	    nSubsidy = 12 * COIN;
         	}
         	else {
         	    nSubsidy = 8 * COIN;
         	}
+    	}
+    	else {
+    		nSubsidy = 1 * COIN;	
     	}
     }
     //count PoW coins is 553.75
