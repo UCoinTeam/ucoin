@@ -981,7 +981,7 @@ int64_t GetProofOfWorkReward(int64_t nFees)
     	{
 		nSubsidy = 0 * COIN;
     	}
-    	else if(curBlock < 148000) {
+    	else if(curBlock < 150000) {
         	if((curBlock%2) == 0) {
         	    nSubsidy = 12 * COIN;
         	}
