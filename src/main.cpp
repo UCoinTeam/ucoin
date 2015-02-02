@@ -988,9 +988,7 @@ int64_t GetProofOfWorkReward(int64_t nFees)
         	    nSubsidy = 8 * COIN;
         	}
     	}
-    	else {
-    		nSubsidy = 1 * COIN;	
-    	}
+
     //count PoW coins is 553.75
     if (fDebug && GetBoolArg("-printcreation"))
         printf("GetProofOfWorkReward() : create=%s nSubsidy=%"PRId64"\n", FormatMoney(nSubsidy).c_str(), nSubsidy);
