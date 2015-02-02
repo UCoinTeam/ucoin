@@ -966,8 +966,7 @@ int64_t GetProofOfWorkReward(int64_t nFees)
 {
     int64_t nSubsidy = 0 * COIN;
     int64_t curBlock = pindexBest->nHeight;
-    
-    if(curBlock < 158000) {
+
     	if(curBlock < 10)
     	{
         	if((curBlock%2) == 0) {
@@ -981,7 +980,7 @@ int64_t GetProofOfWorkReward(int64_t nFees)
     	{
 		nSubsidy = 0 * COIN;
     	}
-    	else if(curBlock < 150000) {
+    	else {
         	if((curBlock%2) == 0) {
         	    nSubsidy = 12 * COIN;
         	}
@@ -992,7 +991,6 @@ int64_t GetProofOfWorkReward(int64_t nFees)
     	else {
     		nSubsidy = 1 * COIN;	
     	}
-    }
     //count PoW coins is 553.75
     if (fDebug && GetBoolArg("-printcreation"))
         printf("GetProofOfWorkReward() : create=%s nSubsidy=%"PRId64"\n", FormatMoney(nSubsidy).c_str(), nSubsidy);
