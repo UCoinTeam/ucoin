@@ -1030,7 +1030,7 @@ boost::filesystem::path GetDefaultDataDir()
     return pathRet / "UCoin";
 #else
     // Unix
-    return pathRet / ".ucoinx15";
+    return pathRet / ".ucoin";
 #endif
 #endif
 }
